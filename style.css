@@ -1,0 +1,76 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gainsboro;
+}
+
+.descContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: calc(33.33% - 10px);
+    max-width: 600px;
+    margin: 0;
+    background-color: gray;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descContainer p {
+    flex-basis: 45%;
+    margin: 5px;
+    justify-content: center;
+}
+
+#instructions{
+    background-color: aqua;
+}
+
+/* #imageContainer{
+    position: relative;
+    max-width: 100%;
+}
+.images{
+    position: absolute;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    opacity: .5;
+}
+
+#artimage1{
+    z-index: 2;
+}
+
+#artimage2{
+    z-index: 1;
+    margin: 0;
+} */
+
+#imageContainer {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+}
+
+.images {
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 100%; /* Full viewport height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire viewport */
+    z-index: 1; /* Adjust z-index as needed for layering */
+    opacity: 0.5;
+}
+
+/* Optionally, you can adjust the z-index for specific images */
+#artImage1 {
+    z-index: 2;
+}
+
+#artImage2 {
+    z-index: 1; /* You can control the stacking order */
+}
+
